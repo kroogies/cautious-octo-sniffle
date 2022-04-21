@@ -89,6 +89,6 @@
               # edit contact btn
               editbtn = Button(window2, text='U P D A T E', font=('@Yu Gothic Light', 16), fg='#000000', bg='#ffffff',
                               relief=SOLID, borderwidth=3, activeforeground='#000000', activebackground='#bdbebf',
-                              command=eddb)  # added command, might bug out tho
+                              command=eddb)  
               editbtn.place(x=115, y=370,
                            width=120, height=45)
