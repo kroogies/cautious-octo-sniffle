@@ -76,7 +76,7 @@
                   if fields[2] == str(int(fields[2])):
                       con = sqlite3.connect('contacts1.db')
                       cursor = con.cursor()
-                      cursor.execute("UPDATE contacts SET Fname = :fname_entry, Lname = :lname_entry, PNumber = :nmbr, Email = :email WHERE rowid = contact_id", fields)
+                      cursor.execute("UPDATE contacts SET Fname = :fname_entry, Lname = :lname_entry, PNumber = :nmbr, Email = :email WHERE rowid = :id_entry", fields)
 
                       con.commit()
                       con.close()
